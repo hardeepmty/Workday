@@ -63,4 +63,4 @@ export const getUser = catchAsyncErrors((req, res, next) => {
     success: true,
     user,
   });
-});
+}); 
