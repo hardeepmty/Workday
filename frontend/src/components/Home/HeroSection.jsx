@@ -33,12 +33,10 @@ const HeroSection = () => {
       <div className="heroSection">
         <div className="container">
           <div className="title">
-            <h1>Find a job that suits</h1>
-            <h1>your interests and skills</h1>
+            <h2>Unlock Your Career</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              voluptate repellat modi quidem aliquid eaque ducimus ipsa et,
-              facere mollitia!
+            Explore opportunities from across the globe to learn,
+             showcase skills, gain CV points & get hired by your dream company.
             </p>
           </div>
           <div className="image">
