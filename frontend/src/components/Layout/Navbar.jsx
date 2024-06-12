@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="container">
         <div className="logo">
           <img src="logo.png" alt="logo" />
-          <h3>Workday</h3>
+          <h3 style={{color: "#1b2b57"}}>Workday</h3>
         </div>
         <ul className={!show ? "menu" : "show-menu menu"}>
           <li>
@@ -43,14 +43,14 @@ const Navbar = () => {
           </li>
           <li>
             <Link to={"/job/getall"} onClick={() => setShow(false)}>
-              All Jobs
+              Jobs
             </Link>
           </li>
           <li>
             <Link to={"/applications/me"} onClick={() => setShow(false)}>
               {user && user.role === "Employer"
                 ? "Applicants's Applications"
-                : "My Applications"}
+                : "Applied"}
             </Link>
           </li>
           {user && user.role === "Employer" ? (
@@ -73,7 +73,7 @@ const Navbar = () => {
           <button onClick={handleLogout}>Logout</button>
         </ul>
         <div className="hamburger">
-          <GiHamburgerMenu style={{color:"red"}} onClick={() => setShow(!show)} />
+          <GiHamburgerMenu style={{color:"#1b2b57"}} onClick={() => setShow(!show)} />
         </div>
       </div>
     </nav>

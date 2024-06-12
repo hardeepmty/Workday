@@ -1,6 +1,5 @@
 import React from "react";
 import { FaBuilding, FaSuitcase, FaUsers, FaUserPlus } from "react-icons/fa";
-import "./HeroSection.css";
 
 
 const HeroSection = () => {
@@ -35,14 +34,14 @@ const HeroSection = () => {
       <div className="heroSection">
         <div className="container">
           <div className="title">
-            <h2>Unlock Your Career</h2>
+            <h2 style={{color: "#1b2b57"}}>Unlock Your Career</h2>
             <p>
             Explore opportunities from across the globe to learn,
              showcase skills, gain CV points & get hired by your dream company.
             </p>
           </div>
            <div className="image">
-            <img src="/heroS.jpg" alt="hero" />
+            <img src="/bento.png" alt="hero" />
           </div> 
         </div>
         <div className="details">

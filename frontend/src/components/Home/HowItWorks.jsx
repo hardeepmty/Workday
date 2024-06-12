@@ -8,9 +8,9 @@ const HowItWorks = () => {
     <>
       <div className="howitworks">
         <div className="container">
-          <h3>How JobZee Works</h3>
+          <h3 style={{color: "#1b2b57"}}>How Workday Works</h3>
           <div className="banner">
-            <div className="card">
+            <div className="card" style={{backgroundColor:"#c6dcfb"}}>
               <FaUserPlus />
               <p>Create Account</p>
               <p>
@@ -18,7 +18,7 @@ const HowItWorks = () => {
                 Consequuntur, culpa.
               </p>
             </div>
-            <div className="card">
+            <div className="card" style={{backgroundColor:"#c6dcfb"}}>
               <MdFindInPage />
               <p>Find a Job/Post a Job</p>
               <p>
@@ -26,7 +26,7 @@ const HowItWorks = () => {
                 Consequuntur, culpa.
               </p>
             </div>
-            <div className="card">
+            <div className="card" style={{backgroundColor:"#c6dcfb"}}>
               <IoMdSend />
               <p>Apply For Job/Recruit Suitable Candidates</p>
               <p>
