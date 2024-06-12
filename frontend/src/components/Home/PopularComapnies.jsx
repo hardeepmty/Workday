@@ -7,7 +7,7 @@ const PopularCompanies = () => {
     {
       id: 1,
       title: "Microsoft",
-      location: "Street 10 Karachi, Pakistan",
+      location: "Bangalore, India",
       openPositions: 10,
       icon: <FaMicrosoft />,
       color: "#f9de8d", // Orange color for Microsoft
@@ -15,7 +15,7 @@ const PopularCompanies = () => {
     {
       id: 2,
       title: "Tesla",
-      location: "Street 10 Karachi, Pakistan",
+      location: "USA, Toronto",
       openPositions: 5,
       icon: <SiTesla />,
       color: "#f4b4cb", // Blue color for Tesla
@@ -23,7 +23,7 @@ const PopularCompanies = () => {
     {
       id: 3,
       title: "Apple",
-      location: "Street 10 Karachi, Pakistan",
+      location: "USA, California",
       openPositions: 20,
       icon: <FaApple />,
       color: "#c6bbfa", // Green color for Apple
@@ -31,7 +31,7 @@ const PopularCompanies = () => {
     {
       id: 4,
       title: "Meta",
-      location: "Street 10 Karachi, Pakistan",
+      location: "West Bengal, India",
       openPositions: 20,
       icon: <FaFacebook />,
       color: "#f5c398", // Indigo color for Meta

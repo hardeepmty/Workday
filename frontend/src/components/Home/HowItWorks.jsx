@@ -10,7 +10,7 @@ const HowItWorks = () => {
         <div className="container">
           <h3 style={{color: "#1b2b57"}}>How Workday Works</h3>
           <div className="banner">
-            <div className="card" style={{backgroundColor:"#c6dcfb"}}>
+            <div className="card" style={{backgroundColor:"#e0e0e0"}}>
               <FaUserPlus />
               <p>Create Account</p>
               <p>
@@ -18,7 +18,7 @@ const HowItWorks = () => {
                 Consequuntur, culpa.
               </p>
             </div>
-            <div className="card" style={{backgroundColor:"#c6dcfb"}}>
+            <div className="card" style={{backgroundColor:"#e0e0e0"}}>
               <MdFindInPage />
               <p>Find a Job/Post a Job</p>
               <p>
@@ -26,7 +26,7 @@ const HowItWorks = () => {
                 Consequuntur, culpa.
               </p>
             </div>
-            <div className="card" style={{backgroundColor:"#c6dcfb"}}>
+            <div className="card" style={{backgroundColor:"#e0e0e0"}}>
               <IoMdSend />
               <p>Apply For Job/Recruit Suitable Candidates</p>
               <p>
