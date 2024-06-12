@@ -54,7 +54,7 @@ const Register = () => {
         <div className="container">
           <div className="header">
             <img src="/logo.png" alt="logo" />
-            <h3>Create a new account</h3>
+            <h3 style={{color:"#1b2b57"}}>Create a new account</h3>
           </div>
           <form>
             <div className="inputTag">
@@ -116,10 +116,10 @@ const Register = () => {
                 <RiLock2Fill />
               </div>
             </div>
-            <button type="submit" onClick={handleRegister}>
+            <button type="submit" onClick={handleRegister} style={{backgroundColor:"black"}}>
               Register
             </button>
-            <Link to={"/login"}>Login Now</Link>
+            <Link to={"/login"} style={{marginTop:"1px"}}>Login Now</Link>
           </form>
         </div>
         <div className="banner">
