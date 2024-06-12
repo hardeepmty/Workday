@@ -1,5 +1,7 @@
 import React from "react";
 import { FaBuilding, FaSuitcase, FaUsers, FaUserPlus } from "react-icons/fa";
+import "./HeroSection.css";
+
 
 const HeroSection = () => {
   const details = [
@@ -39,9 +41,9 @@ const HeroSection = () => {
              showcase skills, gain CV points & get hired by your dream company.
             </p>
           </div>
-          <div className="image">
+           <div className="image">
             <img src="/heroS.jpg" alt="hero" />
-          </div>
+          </div> 
         </div>
         <div className="details">
           {details.map((element) => {

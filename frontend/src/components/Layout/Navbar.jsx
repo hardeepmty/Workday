@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { GiHamburgerMenu } from "react-icons/gi";
+import "./Navbar.css";  // Ensure you have an appropriate CSS file for styling
+
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -31,35 +33,36 @@ const Navbar = () => {
       <div className="container">
         <div className="logo">
           <img src="logo.png" alt="logo" />
+          <h3>Workday</h3>
         </div>
         <ul className={!show ? "menu" : "show-menu menu"}>
           <li>
             <Link to={"/"} onClick={() => setShow(false)}>
-              HOME
+              Home
             </Link>
           </li>
           <li>
             <Link to={"/job/getall"} onClick={() => setShow(false)}>
-              ALL JOBS
+              All Jobs
             </Link>
           </li>
           <li>
             <Link to={"/applications/me"} onClick={() => setShow(false)}>
               {user && user.role === "Employer"
-                ? "APPLICANT'S APPLICATIONS"
-                : "MY APPLICATIONS"}
+                ? "Applicants's Applications"
+                : "My Applications"}
             </Link>
           </li>
           {user && user.role === "Employer" ? (
             <>
               <li>
                 <Link to={"/job/post"} onClick={() => setShow(false)}>
-                  POST NEW JOB
+                  Post new Job
                 </Link>
               </li>
               <li>
                 <Link to={"/job/me"} onClick={() => setShow(false)}>
-                  VIEW YOUR JOBS
+                  View your jobs
                 </Link>
               </li>
             </>
@@ -67,10 +70,10 @@ const Navbar = () => {
             <></>
           )}
 
-          <button onClick={handleLogout}>LOGOUT</button>
+          <button onClick={handleLogout}>Logout</button>
         </ul>
         <div className="hamburger">
-          <GiHamburgerMenu onClick={() => setShow(!show)} />
+          <GiHamburgerMenu style={{color:"red"}} onClick={() => setShow(!show)} />
         </div>
       </div>
     </nav>

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaMicrosoft, FaApple } from "react-icons/fa";
+import { FaMicrosoft, FaApple, FaFacebook } from "react-icons/fa";
 import { SiTesla } from "react-icons/si";
 
 const PopularCompanies = () => {
@@ -25,11 +25,19 @@ const PopularCompanies = () => {
       openPositions: 20,
       icon: <FaApple />,
     },
+    {
+      id: 3,
+      title: "Meta",
+      location: "Street 10 Karachi, Pakistan",
+      openPositions: 20,
+      icon: <FaFacebook />,
+    },
   ];
   return (
     <div className="companies">
       <div className="container">
-        <h3>TOP COMPANIES</h3>
+        <h3>Industry veterans
+        Trust us</h3>
         <div className="banner">
           {companies.map((element) => {
             return (
