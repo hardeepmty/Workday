@@ -4,7 +4,7 @@ import { RiLock2Fill } from "react-icons/ri";
 import { Link, Navigate } from "react-router-dom";
 import { FaRegUser } from "react-icons/fa";
 import axios from "axios";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 import { Context } from "../../main";
 
 const Login = () => {
@@ -37,19 +37,20 @@ const Login = () => {
     }
   };
 
-  if(isAuthorized){
-    return <Navigate to={'/'}/>
+  if (isAuthorized) {
+    return <Navigate to="/" />;
   }
 
   return (
     <>
+      <Toaster />
       <section className="authPage">
         <div className="container">
           <div className="header">
             <img src="/logo.png" alt="logo" />
-            <h3 style={{color:"#1b2b57"}}>Login to your account</h3>
+            <h3 style={{ color: "#1b2b57" }}>Login to your account</h3>
           </div>
-          <form>
+          <form onSubmit={handleLogin}>
             <div className="inputTag">
               <label>Login As</label>
               <div>
@@ -85,10 +86,12 @@ const Login = () => {
                 <RiLock2Fill />
               </div>
             </div>
-            <button type="submit" onClick={handleLogin} style={{backgroundColor:"black"}}>
+            <button type="submit" style={{ backgroundColor: "black" }}>
               Login
             </button>
-            <Link to={"/register"} style={{marginTop:"1px"}}>Register Now</Link>
+            <Link to="/register" style={{ marginTop: "1px" }}>
+              Register Now
+            </Link>
           </form>
         </div>
         <div className="banner">
