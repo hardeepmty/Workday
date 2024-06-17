@@ -42,6 +42,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
+                <Link to={"/career"} onClick={() => setShow(false)}>
+                  Career
+                </Link>
+              </li>
+          <li>
             <Link to={"/job/getall"} onClick={() => setShow(false)}>
               Jobs
             </Link>
@@ -63,11 +68,6 @@ const Navbar = () => {
               <li>
                 <Link to={"/job/me"} onClick={() => setShow(false)}>
                   View your jobs
-                </Link>
-              </li>
-              <li>
-                <Link to={"/career"} onClick={() => setShow(false)}>
-                  Career
                 </Link>
               </li>
               
