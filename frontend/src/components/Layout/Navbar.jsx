@@ -4,8 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { GiHamburgerMenu } from "react-icons/gi";
-import "./Navbar.css";  // Ensure you have an appropriate CSS file for styling
-
+import "./Navbar.css"; 
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -24,7 +23,8 @@ const Navbar = () => {
       setIsAuthorized(false);
       navigateTo("/login");
     } catch (error) {
-      toast.error(error.response.data.message), setIsAuthorized(true);
+      toast.error(error.response.data.message);
+      setIsAuthorized(true);
     }
   };
 
@@ -33,13 +33,14 @@ const Navbar = () => {
       <div className="container">
         <div className="logo">
           <img src="logo.png" alt="logo" />
-          <h3 style={{color: "#1b2b57"}}>Workday</h3>
+          <h3 style={{ color: "#1b2b57" }}>Workday</h3>
         </div>
         <ul className={!show ? "menu" : "show-menu menu"}>
           <li>
             <Link
               to={"/career"}
               onClick={() => setShow(false)}
+              className="jobgenie-link"
             >
               JobGenie AI
             </Link>
@@ -73,16 +74,12 @@ const Navbar = () => {
                   View your jobs
                 </Link>
               </li>
-              
             </>
-          ) : (
-            <></>
-          )}
-
+          ) : null}
           <button onClick={handleLogout}>Logout</button>
         </ul>
         <div className="hamburger">
-          <GiHamburgerMenu style={{color:"#1b2b57"}} onClick={() => setShow(!show)} />
+          <GiHamburgerMenu style={{ color: "#1b2b57" }} onClick={() => setShow(!show)} />
         </div>
       </div>
     </nav>

@@ -55,9 +55,9 @@ function CareerBot() {
         }}
       >
         <h1 style={{ fontSize: "2rem", textAlign: "center", marginBottom: "1rem", color: "#333" }}>
-          CareerBot
+          JobGenie AI
         </h1>
-        <h4 style={{color:"gray"}}>Discover Premier Career Paths Tailored to Your Hobbies, Skills, and Interests with JobGenie</h4>
+        <p style={{color:"gray"}}>Discover Premier Career Paths Tailored to Your Hobbies, Skills, and Interests with JobGenie</p>
         <textarea
           required
           style={{
