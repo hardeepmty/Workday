@@ -13,7 +13,7 @@ function CareerBot() {
   async function generateAnswer(e) {
     e.preventDefault();
     setGeneratingAnswer(true);
-    setAnswer("Loading your answer... \n It might take up to 10 seconds");
+    setAnswer("Loading your answer... \n It might take few seconds");
 
     const question = `Based on the following details, suggest some career options:
     Hobbies: ${hobbies}
@@ -57,6 +57,7 @@ function CareerBot() {
         <h1 style={{ fontSize: "2rem", textAlign: "center", marginBottom: "1rem", color: "#333" }}>
           CareerBot
         </h1>
+        <h4 style={{color:"gray"}}>Discover Premier Career Paths Tailored to Your Hobbies, Skills, and Interests with JobGenie</h4>
         <textarea
           required
           style={{

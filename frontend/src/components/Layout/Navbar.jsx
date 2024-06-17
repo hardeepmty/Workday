@@ -40,27 +40,8 @@ const Navbar = () => {
             <Link
               to={"/career"}
               onClick={() => setShow(false)}
-              style={{
-                padding: "0.5rem 1rem",
-                borderRadius: "10px",
-                background: "rgba(255, 255, 255, 0.1)",
-                boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-                backdropFilter: "blur(10px)",
-                transition: "background 0.3s ease, transform 0.3s ease",
-                color: "#1b2b57",
-                fontWeight: "bold",
-                textDecoration: "none"
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.background = "rgba(255, 255, 255, 0.2)";
-                e.currentTarget.style.transform = "translateY(-2px)";
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.background = "rgba(255, 255, 255, 0.1)";
-                e.currentTarget.style.transform = "translateY(0)";
-              }}
             >
-              Career
+              JobGenie AI
             </Link>
           </li>
           <li>
