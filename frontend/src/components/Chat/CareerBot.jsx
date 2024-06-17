@@ -14,7 +14,7 @@ function CareerBot() {
     e.preventDefault();
     setGeneratingAnswer(true);
     setAnswer("Loading your answer... \n It might take up to 10 seconds");
-    
+
     const question = `Based on the following details, suggest some career options:
     Hobbies: ${hobbies}
     Skills: ${skills}
@@ -40,7 +40,7 @@ function CareerBot() {
   }
 
   return (
-    <div style={{ backgroundColor: "white", height: "100vh", padding: "1rem" }}>
+    <div style={{ backgroundColor: "white", height: "100vh", padding: "1rem", paddingTop: "3rem" }}>
       <form
         onSubmit={generateAnswer}
         style={{
@@ -49,11 +49,14 @@ function CareerBot() {
           margin: "auto",
           textAlign: "center",
           backgroundColor: "#f9f9f9",
-          padding: "1rem",
+          padding: "2rem",
           borderRadius: "8px",
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
         }}
       >
-        <h1 style={{ fontSize: "2rem", textAlign: "center" }}>CareerBot</h1>
+        <h1 style={{ fontSize: "2rem", textAlign: "center", marginBottom: "1rem", color: "#333" }}>
+          CareerBot
+        </h1>
         <textarea
           required
           style={{
@@ -63,6 +66,8 @@ function CareerBot() {
             margin: "0.5rem 0",
             minHeight: "50px",
             padding: "0.75rem",
+            fontSize: "1rem",
+            color: "#333",
           }}
           value={hobbies}
           onChange={(e) => setHobbies(e.target.value)}
@@ -77,6 +82,8 @@ function CareerBot() {
             margin: "0.5rem 0",
             minHeight: "50px",
             padding: "0.75rem",
+            fontSize: "1rem",
+            color: "#333",
           }}
           value={skills}
           onChange={(e) => setSkills(e.target.value)}
@@ -91,6 +98,8 @@ function CareerBot() {
             margin: "0.5rem 0",
             minHeight: "50px",
             padding: "0.75rem",
+            fontSize: "1rem",
+            color: "#333",
           }}
           value={interests}
           onChange={(e) => setInterests(e.target.value)}
@@ -105,6 +114,8 @@ function CareerBot() {
             margin: "0.5rem 0",
             minHeight: "50px",
             padding: "0.75rem",
+            fontSize: "1rem",
+            color: "#333",
           }}
           value={experiences}
           onChange={(e) => setExperiences(e.target.value)}
@@ -114,11 +125,13 @@ function CareerBot() {
           type="submit"
           style={{
             backgroundColor: "#4a90e2",
-            padding: "0.75rem",
+            padding: "0.75rem 1.5rem",
             borderRadius: "4px",
             color: "white",
             cursor: "pointer",
             transition: "background-color 0.3s",
+            fontSize: "1rem",
+            border: "none",
           }}
           disabled={generatingAnswer}
           onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#357ab8")}
@@ -136,6 +149,7 @@ function CareerBot() {
           backgroundColor: "#f9f9f9",
           padding: "1rem",
           borderRadius: "8px",
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
         }}
       >
         <ReactMarkdown>{answer}</ReactMarkdown>
